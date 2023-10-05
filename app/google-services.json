@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "565820760881",
+    "firebase_url": "https://tryme-90cfe-default-rtdb.firebaseio.com",
+    "project_id": "tryme-90cfe",
+    "storage_bucket": "tryme-90cfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565820760881:android:956a1b5528635901ee8610",
+        "android_client_info": {
+          "package_name": "com.example.first"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRd13K-vG64fbux_mff4t76aM3uj0Uq_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

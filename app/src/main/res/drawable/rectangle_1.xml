@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="413dp"
+        android:height="720dp"
+        android:viewportWidth="413"
+        android:viewportHeight="720"
+        >
+        <group>
+            <path
+                android:pathData="M36 0H377C396.882 0 413 16.1177 413 36V684C413 703.882 396.882 720 377 720H36C16.1177 720 0 703.882 0 684V36C0 16.1177 16.1177 0 36 0Z"
+                />
+            <group
+                android:translateX="1.259"
+                android:translateY="-0.514"
+                android:pivotX="206.5"
+                android:pivotY="360"
+                android:scaleX="3.028"
+                android:scaleY="3.028"
+                android:rotation="90.092"
+                >
+                <path
+                    android:pathData="M0 0V720H413V0"
+                    >
+                    <aapt:attr name="android:fillColor">
+                        <gradient
+                            android:type="radial"
+                            android:fillAlpha="0.35"
+                            android:centerX="206.5"
+                            android:centerY="360"
+                            android:gradientRadius="103.25"
+                            >
+                            <item
+                                android:color="#B3FFFFFF"
+                                android:offset="0"
+                                />
+                            <item
+                                android:color="#FFFFFF"
+                                android:offset="0"
+                                />
+                            <item
+                                android:color="#1AFFFFFF"
+                                android:offset="0.965"
+                                />
+                        </gradient>
+                    </aapt:attr>
+                </path>
+            </group>
+            <path
+                android:pathData="M36 0H377C396.882 0 413 16.1177 413 36V684C413 703.882 396.882 720 377 720H36C16.1177 720 0 703.882 0 684V36C0 16.1177 16.1177 0 36 0Z"
+                android:strokeWidth="2"
+                android:strokeColor="#FFFFFF"
+                />
+        </group>
+    </vector>

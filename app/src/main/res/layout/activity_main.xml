@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_page"
+    android:layout_width="414dp"
+    android:layout_height="896dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF">
+
+<View
+android:id="@+id/ellipse_8"
+android:layout_width="434dp"
+android:layout_height="434dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="-73dp"
+android:layout_alignParentTop="true"
+android:layout_marginTop="-77dp"
+android:background="@drawable/ellipse_8"
+    />
+
+
+    <View
+        android:id="@+id/ellipse_9"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="509dp"
+        android:background="@drawable/ellipse_9"
+        />
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/img_9"/>
+
+    <TextView
+        android:id="@+id/facecall"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/facecall"
+        android:textAppearance="@style/facecall"
+        android:lineSpacingExtra="-1sp"
+        android:gravity="top"
+        />
+
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="73dp"
+        android:layout_height="75dp"
+        android:src="@drawable/img_10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="318dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/ellipse_6"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/round_shapes"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="370dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+         />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="413dp"
+        android:layout_height="720dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/rectangle_1"
+        />
+
+
+    <View
+        android:id="@+id/rectangle_9"
+        android:layout_width="415dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="839dp"
+        android:background="@drawable/rectangle_9"
+        android:elevation="6dp"
+        />
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/img_8"
+        />
+    <TextView
+        android:id="@+id/new_meeting"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="393dp"
+        android:text="@string/new_meeting"
+        android:textAppearance="@style/new_meeting"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/group_1"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="245dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/img_13"
+        />
+    <TextView
+        android:id="@+id/join_meetin"
+        android:layout_width="132dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="249dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="393dp"
+        android:text="@string/join_meetin"
+        android:textAppearance="@style/join_meetin"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/group_6"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/img_14"
+        />
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="95dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="619dp"
+        android:text="Schedule"
+        android:textAppearance="@style/schedule"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/group_5"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="245dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/img_15"
+        />
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="269dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="619dp"
+        android:text="@string/contacts"
+        android:textAppearance="@style/contacts"
+        android:gravity="top"
+        />
+
+
+
+
+</RelativeLayout>

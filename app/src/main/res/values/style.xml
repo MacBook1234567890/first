@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+
+    <style name="new_meeting">
+        <item name="android:textSize">21sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#4D4C4C</item>
+    </style>
+
+
+    <style name="join_meetin">
+        <item name="android:textSize">21sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#4D4C4C</item>
+    </style>
+
+
+    <style name="schedule">
+        <item name="android:textSize">21sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#4D4C4C</item>
+    </style>
+
+
+    <style name="contacts">
+        <item name="android:textSize">21sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#4D4C4C</item>
+    </style>
+
+    <style name="facecall">
+        <item name="android:textSize">36sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">#FBDEEF</item>
+    </style>
+
+    </resources>

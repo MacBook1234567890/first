@@ -1,0 +1,8 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_page"
+    android:layout_width="414dp"
+    android:layout_height="896dp"
+    android:clipToOutline="true"
+    android:background="#FFFFFF"
+    />
