@@ -1,6 +1,7 @@
 package com.example.first;
 
 import android.app.ActivityOptions;
+import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -16,10 +17,15 @@ import android.text.TextWatcher;
 import android.widget.ImageView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -27,12 +33,16 @@ public class SignupActivity extends AppCompatActivity {
 
     private EditText nameEditText, cnicEditText, emailEditText, phoneEditText, passwordEditText;
     DatabaseHelper myDB;
+    FirebaseFirestore database;//1:05
     private ImageView eyeIcon;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        database=FirebaseFirestore.getInstance();//1:05
+
 
         nameEditText = findViewById(R.id.signup_name);
         cnicEditText = findViewById(R.id.signup_cnic);
@@ -42,6 +52,7 @@ public class SignupActivity extends AppCompatActivity {
        Button signupButton = findViewById(R.id.signup_button);
         TextView loginRedirectText = findViewById(R.id.loginRedirectText);
         myDB = new DatabaseHelper(this);
+
         signupButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -53,6 +64,12 @@ public class SignupActivity extends AppCompatActivity {
                 String phone = phoneEditText.getText().toString().trim();
                 String password = passwordEditText.getText().toString();
 
+
+                UserHelper userHelper=new UserHelper();//1:05
+                userHelper.setName(name);//1:05
+                userHelper.setEmail(email);//1:05
+                userHelper.setCnic(cnic);//1:05
+                userHelper.setPassword(password);//1:05
 
 
                 // Validate user input
@@ -72,11 +89,18 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this, "User with the same CNIC already exists. Please sign up with another CNIC.", Toast.LENGTH_SHORT).show();
                 } else {
                     // Store user information in the database
-                    saveUserToDatabase(name, cnic, email, phone, password);
 
+                    database.collection("Users").document().set(userHelper).addOnSuccessListener(new OnSuccessListener<Void>() {//1:05
+                        @Override
+                        public void onSuccess(Void unused) {//1:05
+                            startActivity(new Intent(SignupActivity.this,LoginActivity.class));//1:05
+                        }//1:05
+                    });//1:05
+                    saveUserToDatabase(name, cnic, email, phone, password);
                     // Redirect to the login page (you  need to implement LoginActivity)
                     Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                     startActivity(intent);
+
                 }
 
             }
@@ -104,7 +128,7 @@ public class SignupActivity extends AppCompatActivity {
         cnic = cnic.replaceAll("[\\s-]+", "");
 
         // Check if the CNIC is valid (13 digits)
-        return cnic.length() == 13 && Pattern.matches("[0-9]+", cnic);
+        return cnic.length() == 13 ;
     }
     private boolean isValidPhoneNumber(String phoneNumber) {
         // Remove any spaces or hyphens from the phone number
@@ -158,9 +182,11 @@ public class SignupActivity extends AppCompatActivity {
 
         long result = database.insert("Users", null, values);
 
+
         if (result != -1) {
             Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show();
             finish();
+
         } else {
             Toast.makeText(this, "Registration failed", Toast.LENGTH_SHORT).show();
         }

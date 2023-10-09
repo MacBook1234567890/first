@@ -30,4 +30,7 @@
     <string name="setting">setting</string>
     <string name="join_meetin">Join Meetin</string>
     <string name="contacts">Contacts</string>
+    <string name="zia_ur_rehman">Zia Ur Rehman</string>
+    <string name="join_create">Join/Create</string>
+    <string name="share">Share</string>
 </resources>

@@ -60,7 +60,7 @@ android:background="@drawable/ellipse_8"
         android:layout_height="75dp"
         android:src="@drawable/img_10"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="318dp"
+        android:layout_marginStart="310dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="29dp"
         />
@@ -72,14 +72,14 @@ android:background="@drawable/ellipse_8"
         android:layout_height="16dp"
         android:src="@drawable/round_shapes"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="370dp"
+        android:layout_marginLeft="360dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="78dp"
          />
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="413dp"
+        android:layout_width="wrap_content"
         android:layout_height="720dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -89,13 +89,14 @@ android:background="@drawable/ellipse_8"
 
 
     <View
+
         android:id="@+id/rectangle_9"
         android:layout_width="415dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="-2dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-2dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="839dp"
+        android:layout_marginTop="736dp"
         android:background="@drawable/rectangle_9"
         android:elevation="6dp"
         />
@@ -127,7 +128,7 @@ android:background="@drawable/ellipse_8"
         android:layout_width="139dp"
         android:layout_height="139dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="245dp"
+        android:layout_marginLeft="220dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="248dp"
         android:background="@drawable/img_13"
@@ -173,7 +174,7 @@ android:background="@drawable/ellipse_8"
         android:layout_width="139dp"
         android:layout_height="139dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="245dp"
+        android:layout_marginLeft="220dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="470dp"
         android:background="@drawable/img_15"
@@ -182,8 +183,8 @@ android:background="@drawable/ellipse_8"
         android:id="@+id/contacts"
         android:layout_width="92dp"
         android:layout_height="29dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="269dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="250dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="619dp"
         android:text="@string/contacts"
@@ -192,6 +193,59 @@ android:background="@drawable/ellipse_8"
         />
 
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="745dp"
+        android:elevation="6dp"
+        android:src="@drawable/baseline_home_24"/>
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="790dp"
+        android:elevation="6dp"
+        android:layout_marginStart="33dp"
+        android:textSize="20dp"
+        android:text="Home"/>
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="745dp"
+        android:elevation="6dp"
+        android:src="@drawable/baseline_access_time_24"/>
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="790dp"
+        android:elevation="6dp"
+        android:layout_marginStart="170dp"
+        android:textSize="20dp"
+        android:text="Meeting"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="745dp"
+        android:elevation="6dp"
+        android:src="@drawable/baseline_settings_24"/>
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="790dp"
+        android:elevation="6dp"
+        android:layout_marginStart="300dp"
+        android:textSize="20dp"
+        android:text="Setting"/>
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="150dp"/>
 
 </RelativeLayout>

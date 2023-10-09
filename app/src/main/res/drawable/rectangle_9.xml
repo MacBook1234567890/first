@@ -5,7 +5,7 @@
     android:width="415dp"
     android:height="60dp"
     android:viewportWidth="415"
-    android:viewportHeight="60"
+    android:viewportHeight="10"
     >
     <group>
         <clip-path

@@ -1,4 +1,5 @@
 package com.example.first;
+import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,18 +13,24 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
+
+import kotlinx.coroutines.channels.ProduceKt;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText cnicEditText, passwordEditText;
     Button btnLogin;
     DatabaseHelper myDB;
+    ProgressDialog progressDialog;
     public  static final String SHARED_PREFS="sharedPrefs";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+progressDialog=new ProgressDialog(LoginActivity.this);
+progressDialog.setTitle("Please Wait...");
+progressDialog.setMessage("Account Created");
         cnicEditText = findViewById(R.id.login_cnic);
         passwordEditText = findViewById(R.id.login_password);
         btnLogin = findViewById(R.id.login_button);
@@ -35,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         checkBox();
         btnLogin.setOnClickListener(v -> {
             // Get user input
+            progressDialog.show();
+
             String cnic = cnicEditText.getText().toString().trim();
             String password = passwordEditText.getText().toString();
 
@@ -50,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (isAuthenticated) {
                     // Redirect to the main activity
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, Dashboard.class);//
                     startActivity(intent);
                     finish(); // Close the login activity
                 } else {
@@ -95,6 +104,7 @@ public class LoginActivity extends AppCompatActivity {
         // Check if the CNIC and password match your database records
         // Return true if authentication is successful, otherwise return false
         boolean userExists = myDB.checkUser(cnic, password);
+        progressDialog.dismiss();
         if (!userExists) {
             return false;
         }

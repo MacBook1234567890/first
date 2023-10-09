@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.first"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.first"
-        minSdk = 22
-        targetSdk = 33
+        minSdk = 23
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -51,11 +51,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
-    implementation ("com.google.firebase:firebase-core:22.0.0")
+//    implementation ("com.google.firebase:firebase-core:22.0.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation ("androidx.databinding:databinding-common:8.1.2")
     implementation ("com.google.firebase:firebase-messaging:23.2.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
     implementation ("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation ("androidx.browser:browser:1.6.0")
@@ -63,5 +63,14 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.2.2")
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+
+    implementation("com.google.firebase:firebase-auth")
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation ("org.jitsi.react:jitsi-meet-sdk:7.0.1")//1:05
+    implementation ("org.jitsi.react:jitsi-meet-sdk:")
+
+
+
+
 
 }
